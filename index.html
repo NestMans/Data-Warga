@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Data Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Warga Srondol Bumi Indah</h1>
+        <form id="vehicleForm">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <input type="text" id="alamat" placeholder="Alamat" required>
+            <input type="text" id="platMobil" placeholder="Plat Mobil" required>
+            <input type="text" id="jenisMobil" placeholder="Jenis Mobil" required>
+            <input type="text" id="warnaMobil" placeholder="Warna Mobil" required>
+            <button type="submit" id="saveBtn">Save Data</button>
+        </form>
+        <input type="text" id="search" placeholder="Search by Nama, Alamat, or Plat Mobil">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Plat Mobil</th>
+                    <th>Jenis Mobil</th>
+                    <th>Warna Mobil</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
